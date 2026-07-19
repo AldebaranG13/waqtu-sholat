@@ -1,0 +1,58 @@
+/*defaults*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*page*/
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/*body*/
+
+body {
+    background-color:black;
+    color:white;  
+
+    font-family: "Noto Sans", sans-serif;
+}
+
+html {
+    font-variant-numeric: tabular-nums;
+}
+
+/*media*/
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*forms*/
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+/*links*/
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

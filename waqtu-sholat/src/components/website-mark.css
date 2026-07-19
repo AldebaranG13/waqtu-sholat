@@ -1,0 +1,56 @@
+.website-mark-spacer {
+  width: 100%;
+  height: 5rem;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.website-mark-wrapper {
+  position: sticky;
+  bottom: 0;
+  left: 0.75rem;
+  z-index: 1000;
+  pointer-events: auto;
+  display: inline-block;
+  cursor: zoom-in;
+}
+
+.website-mark-wrapper img {
+  display: block;
+  width: auto;
+  height: auto;
+  transform: scale(0.2);
+  transform-origin: left bottom;
+  max-width: none;
+  transition: transform 250ms ease, filter 250ms ease;
+}
+
+.website-mark-overlay {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 200ms ease;
+  z-index: 1001;
+}
+
+.website-mark-overlay.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.website-mark-overlay img {
+  width: auto;
+  max-width: 90vw;
+  max-height: 90vh;
+  transform: scale(0.2);
+  transition: transform 250ms ease;
+  cursor: zoom-out;
+}
+
+.website-mark-overlay.visible img {
+  transform: scale(1);
+}
