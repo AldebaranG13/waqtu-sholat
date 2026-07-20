@@ -6,10 +6,9 @@
 }
 
 .website-mark-wrapper {
-  position: sticky;
-  bottom: 0;
-  left: 0.75rem;
-  z-index: 1000;
+  position: static;
+  margin: 1rem 0 0 0.75rem;
+  z-index: 1;
   pointer-events: auto;
   display: inline-block;
   cursor: zoom-in;
